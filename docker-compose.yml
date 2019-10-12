@@ -23,7 +23,7 @@ services:
         - HUB_HOST=hub
 
   search-module:
-      image: selenium_tests_container
+      image: mihalichzh/selenium_tests_image
       depends_on:
         - chrome
         - firefox
@@ -35,7 +35,7 @@ services:
         - ./search-test-results:/test_executables/test-output
 
   book-flight-module:
-      image: selenium_tests_container
+      image: mihalichzh/selenium_tests_image
       depends_on:
         - chrome
         - firefox
