@@ -32,7 +32,7 @@ services:
         - HUB_HOST=hub
         - MODULE=search-module-tests.xml
       volumes:
-        - ./search-test-results:/test_executables/test-output
+        - ./output/search-test-results:/test_executables/test-output
 
   book-flight-module:
       image: mihalichzh/selenium_tests_image
@@ -44,4 +44,4 @@ services:
         - HUB_HOST=hub
         - MODULE=book-module-tests.xml
       volumes:
-        - ./book-flight-test-results:/test_executables/test-output
+        - ./output/book-flight-test-results:/test_executables/test-output
